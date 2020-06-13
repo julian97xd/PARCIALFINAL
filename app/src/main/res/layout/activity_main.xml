@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+   <fragment
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/map"
+       android:tag="fragment"
+       app:mapType="satellite"
+       android:name="com.google.android.gms.maps.SupportMapFragment"
+       />
+
+   <com.getbase.floatingactionbutton.FloatingActionsMenu
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom|end"
+       android:layout_margin="@dimen/_16sdp"
+       >
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/btnAdd"
+          app:fab_title="Agregar montaña"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_size="mini"
+          app:fab_icon="@drawable/ic_add"
+          app:fab_colorNormal="@color/colorPrimary"
+          />
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/show_list"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_size="mini"
+          app:fab_icon="@drawable/ic_list"
+          app:fab_colorNormal="@color/colorPrimary"
+          />
+
+   </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
